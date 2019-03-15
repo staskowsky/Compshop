@@ -1,0 +1,374 @@
+body {
+    background-color: white;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    max-resolution: 1920,1080;
+    overflow-x: hidden;
+}
+
+.header {
+    margin: 0px;
+    color: white;
+    background-image: linear-gradient(to right, rebeccapurple, #006680);
+    height: 100px;
+}
+
+.header button {
+    float: right;
+    width: 40%;
+    height: 35px;
+    background-color: white;
+    border: 1px solid dimgray;
+    border-radius: 8px;
+    color: dimgray;
+    font: 14px Georgia, serif;
+    margin: 2px;
+    margin-top: 32.5px;
+}
+.logged button {
+    width: 22%;
+}
+.header button:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+.title {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 24px;
+    padding: 5px;
+}
+.title a {
+   color: white;
+}
+.title a:hover {
+    color: white;
+}
+
+.info {
+    padding-top: 20px;
+}
+.info p {
+    float: right;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+}
+
+.error {
+    color: red;
+    font: 16px Verdana, sans-serif;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
+.register input {
+    margin-bottom: 15px;
+    min-width: 180px;
+}
+
+.registerBtn {
+    padding: 10px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.categories {
+    background-color: gray;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px;
+}
+
+.categories table {
+    width: 100%;
+}
+.categories td {
+    height: 40px;
+    border-right: 1px white solid;
+    border-left: 1px white solid;
+    text-align: center;
+    padding: 0px;
+}
+.categories p {
+    height: 40px;
+    padding-top: 10px;
+    color: white;
+}
+
+.categories td:hover {
+    background-color: #999999;
+}
+
+.categories td:active {
+    background-image: linear-gradient(to bottom,  gray, #999999);
+}
+
+.mobileContent {
+    display: none;
+    position: fixed;
+    top: Calc(100vh - 50px);
+    background-color: dimgray;
+    width: 100vh;
+    height: 50px;
+    padding: 8px;
+    margin-left: -15px;
+}
+.mobileContent li {
+    background-color: gray;
+    border-top: 1px solid white;
+    color: black;
+}
+.mobileContent a {
+    height: 50px;
+    font-size: 24px;
+}
+
+.container {
+    display: inline;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.productTable {
+    padding: 30px;
+}
+
+.productDescription img {
+    width: 70%;
+    margin-top: 24px;
+}
+
+.purchase {
+    float: right;
+    height: 50px;
+    width: 160px;
+    background-color: rebeccapurple;
+    border: 1px solid #232323;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 50px 50px 0 0;
+}
+
+.purchase:hover {
+    border: 1px solid #232323;
+    background-color: #8633B9;
+    color: white;
+}
+
+.purchase:active {
+    background-image: linear-gradient(to bottom, rebeccapurple, #8633B9);
+}
+
+.updateTable {
+    margin: 30px;
+}
+
+.updateTable td {
+    width: 300px;
+}
+
+.updateForm p {
+    margin: 30px;
+}
+
+.updateTable input {
+    min-width: 150px;
+    margin: 0px 0px 15px 5px;
+}
+.cartTable {
+    border: 1px black solid;
+}
+.cartTableHead {
+    height: 50px;
+    width: Calc(100% + 30px);
+    margin: 0px -15px 0px;
+    background: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.cartTableProduct {
+    width: 100%;
+    border-bottom: dimgray 1px solid;
+    float: right;
+    font-size: 20px;
+}
+
+.cartTableMobile {
+    font-size: 20px;
+    display: none;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.purchaseBtn {
+    margin-right: 44%;
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.pickOrder {
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.stickyMenu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 120;
+}
+
+.scrollTop {
+    border: 2px solid black;
+    border-radius: 10px;
+    width:70px;
+    height:70px;
+    position:fixed;
+    bottom: 7%;
+    right: 6%;
+    z-index: 110;
+    background-image: url("arrow.jpg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+
+.adminHeader {
+    margin: 30px 5px 5px 30px;
+}
+
+.adminHeader button {
+    margin: 5px;
+}
+
+.userTable {
+    border: 1px black solid;
+}
+.userTable thead {
+    background: #006680;
+    color: white;
+    font-weight: bold;
+}
+.userTable tr:nth-child(even) {
+    background: #bfbfbf;
+}
+.userTable td {
+    border-right: 1px solid black;
+    padding-left: 4px;
+}
+.userTable tr {
+    height: 24px;
+    border-bottom: dimgray 1px solid;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .headerBtns {
+        display: none;
+    }
+
+    .mobileContent {
+        display: flex;
+    }
+
+    .content p {
+        margin-bottom: 50px;
+    }
+
+    .logoutMobile {
+        background-color: gray;
+        font-size: 24px;
+        border: none;
+        height: 50px;
+        padding-left: 25px;
+        color: white;
+    }
+
+    .mobileFooter {
+        width: 40vw;
+        margin-left: 5vw;
+    }
+
+    .productDescription {
+        margin: 0;
+        padding: 0;
+    }
+
+    .productDescription img {
+        width: 100%;
+        margin: 24px;
+    }
+
+    .purchase {
+        margin: 0;
+        margin-top: -20px;
+        float: right;
+    }
+
+    .productTable {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .cartTableMobile {
+        display: block;
+    }
+
+    .cartTableMobileProduct {
+        margin-bottom: 5px;
+        width: 60%;
+    }
+
+    .cartTable {
+        display: none;
+    }
+
+    .purchaseBtn {
+        margin: 10px 0px 40px 0px;
+    }
+
+    .scrollTop {
+        border: 1px solid black;
+        border-radius: 20px;
+        width:40px;
+        height:40px;
+        position:fixed;
+        bottom: 10%;
+        right: Calc(50% - 20px);
+        z-index: 110;
+        background-image: url("arrow.jpg");
+        background-position: center;
+        background-size: cover;
+        display: none;
+    }
+
+}
+
